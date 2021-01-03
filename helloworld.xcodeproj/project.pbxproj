@@ -15,6 +15,10 @@
 		C4F93765259F756600DFC943 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F93764259F756600DFC943 /* main.m */; };
 		C4F9376F259F756600DFC943 /* helloworldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F9376E259F756600DFC943 /* helloworldTests.m */; };
 		C4F9377A259F756700DFC943 /* helloworldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F93779259F756700DFC943 /* helloworldUITests.m */; };
+		C4F9379125A0791B00DFC943 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F9379025A0791B00DFC943 /* TestView.xib */; };
+		C4F9379725A0CA8E00DFC943 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F9379625A0CA8E00DFC943 /* TestView.m */; };
+		C4F9379D25A0D48000DFC943 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F9379C25A0D48000DFC943 /* HelloWorldViewController.m */; };
+		C4F937A225A0D53D00DFC943 /* HelloWorldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F937A125A0D53D00DFC943 /* HelloWorldViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		C4F93775259F756700DFC943 /* helloworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F93779259F756700DFC943 /* helloworldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helloworldUITests.m; sourceTree = "<group>"; };
 		C4F9377B259F756700DFC943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4F9379025A0791B00DFC943 /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		C4F9379525A0CA8E00DFC943 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		C4F9379625A0CA8E00DFC943 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		C4F9379B25A0D48000DFC943 /* HelloWorldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
+		C4F9379C25A0D48000DFC943 /* HelloWorldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; };
+		C4F937A125A0D53D00DFC943 /* HelloWorldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelloWorldViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,12 @@
 				C4F93760259F756600DFC943 /* LaunchScreen.storyboard */,
 				C4F93763259F756600DFC943 /* Info.plist */,
 				C4F93764259F756600DFC943 /* main.m */,
+				C4F9379025A0791B00DFC943 /* TestView.xib */,
+				C4F9379525A0CA8E00DFC943 /* TestView.h */,
+				C4F9379625A0CA8E00DFC943 /* TestView.m */,
+				C4F9379B25A0D48000DFC943 /* HelloWorldViewController.h */,
+				C4F9379C25A0D48000DFC943 /* HelloWorldViewController.m */,
+				C4F937A125A0D53D00DFC943 /* HelloWorldViewController.xib */,
 			);
 			path = helloworld;
 			sourceTree = "<group>";
@@ -234,7 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F9379125A0791B00DFC943 /* TestView.xib in Resources */,
 				C4F93762259F756600DFC943 /* LaunchScreen.storyboard in Resources */,
+				C4F937A225A0D53D00DFC943 /* HelloWorldViewController.xib in Resources */,
 				C4F9375F259F756600DFC943 /* Assets.xcassets in Resources */,
 				C4F9375D259F756600DFC943 /* Main.storyboard in Resources */,
 			);
@@ -261,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F9379725A0CA8E00DFC943 /* TestView.m in Sources */,
 				C4F9375A259F756600DFC943 /* ViewController.m in Sources */,
+				C4F9379D25A0D48000DFC943 /* HelloWorldViewController.m in Sources */,
 				C4F93754259F756600DFC943 /* AppDelegate.m in Sources */,
 				C4F93765259F756600DFC943 /* main.m in Sources */,
 			);

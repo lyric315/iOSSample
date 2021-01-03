@@ -6,6 +6,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HelloWorldViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSLog(@"%@", @"application:didFinishLaunchingWithOptions:");
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    HelloWorldViewController *viewController = [[HelloWorldViewController alloc]initWithNibName:@"HelloWorldViewController" bundle:nil];
+    self.window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelloWorldViewController">
+            <connections>
+                <outlet property="mXibCountLabel" destination="doD-0N-bml" id="STz-1P-GEI"/>
+                <outlet property="view" destination="NPa-ib-8lj" id="6I1-HQ-Ytd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Gh-z0-q22">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="28" y="26"/>
+        </label>
+        <view contentMode="scaleToFill" id="NPa-ib-8lj">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTE-eD-KvO">
+                    <rect key="frame" x="153" y="433" width="108" height="30"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <size key="titleShadowOffset" width="2" height="2"/>
+                    <state key="normal" title="Please Click Me">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="ks7-Zo-9yz"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click Counted Number: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doD-0N-bml">
+                    <rect key="frame" x="111" y="381" width="220" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="0bo-9v-fnC"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eTE-eD-KvO" firstAttribute="centerX" secondItem="NPa-ib-8lj" secondAttribute="centerX" id="AKF-xl-LaO"/>
+                <constraint firstItem="eTE-eD-KvO" firstAttribute="centerY" secondItem="NPa-ib-8lj" secondAttribute="centerY" id="BbV-Oy-lVt"/>
+                <constraint firstItem="eTE-eD-KvO" firstAttribute="centerX" secondItem="NPa-ib-8lj" secondAttribute="centerX" id="WOh-JA-8dQ"/>
+                <constraint firstItem="eTE-eD-KvO" firstAttribute="centerY" secondItem="NPa-ib-8lj" secondAttribute="centerY" id="ZCT-Z9-PVM"/>
+                <constraint firstItem="eTE-eD-KvO" firstAttribute="centerX" secondItem="NPa-ib-8lj" secondAttribute="centerX" id="abB-G9-bEl"/>
+                <constraint firstItem="eTE-eD-KvO" firstAttribute="centerY" secondItem="NPa-ib-8lj" secondAttribute="centerY" id="h4M-Gq-LVj"/>
+            </constraints>
+            <point key="canvasLocation" x="289.85507246376812" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
