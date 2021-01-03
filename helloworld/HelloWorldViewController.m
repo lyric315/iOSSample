@@ -18,6 +18,12 @@
 
 @implementation HelloWorldViewController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    NSLog(@"HelloWorldController init");
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -94,7 +100,7 @@
     CGFloat pointY = 100 + 100 / 2 + 25;
     CGFloat pointX = screenBounds.size.width / 2 - labelWidth / 2;
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-    [button setTitle:@"Please Click Me" forState:UIControlStateNormal];
+    [button setTitle:@"Go Back Jump" forState:UIControlStateNormal];
     button.frame = CGRectMake(pointX, pointY, labelWidth, labelHeight);
     [button addTarget:self action:@selector(onClickButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
@@ -121,7 +127,26 @@
 // 代码中绑定点击事件
 - (void)onClickButton:(id)sender {
     NSLog(@"onClickButton Button");
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"Go Back To last ViewController");
+    }];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"viewWillAppear");
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"viewDidAppear");
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    NSLog(@"viewWillDisappear");
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    NSLog(@"viewDidDisappear");
+}
 
 @end

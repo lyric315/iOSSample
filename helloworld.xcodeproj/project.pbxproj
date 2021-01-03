@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4706EC325A2075800C303E1 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4706EC225A2075800C303E1 /* MainTableViewController.m */; };
 		C4F93754259F756600DFC943 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F93753259F756600DFC943 /* AppDelegate.m */; };
 		C4F9375A259F756600DFC943 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F93759259F756600DFC943 /* ViewController.m */; };
 		C4F9375D259F756600DFC943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F9375B259F756600DFC943 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4706EC125A2075800C303E1 /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		C4706EC225A2075800C303E1 /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		C4F9374F259F756600DFC943 /* helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F93752259F756600DFC943 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4F93753259F756600DFC943 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				C4F9379B25A0D48000DFC943 /* HelloWorldViewController.h */,
 				C4F9379C25A0D48000DFC943 /* HelloWorldViewController.m */,
 				C4F937A125A0D53D00DFC943 /* HelloWorldViewController.xib */,
+				C4706EC125A2075800C303E1 /* MainTableViewController.h */,
+				C4706EC225A2075800C303E1 /* MainTableViewController.m */,
 			);
 			path = helloworld;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			files = (
 				C4F9379725A0CA8E00DFC943 /* TestView.m in Sources */,
 				C4F9375A259F756600DFC943 /* ViewController.m in Sources */,
+				C4706EC325A2075800C303E1 /* MainTableViewController.m in Sources */,
 				C4F9379D25A0D48000DFC943 /* HelloWorldViewController.m in Sources */,
 				C4F93754259F756600DFC943 /* AppDelegate.m in Sources */,
 				C4F93765259F756600DFC943 /* main.m in Sources */,
